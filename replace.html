@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Tutorial</title>
+  <script src="js/jquery.js" charset="utf-8"></script>
+
+  <script>
+
+  $("document").ready(function(){
+    var newText=$("<p>");
+    newText.append("<h1>I'm replaced text using jQuery</h1>");
+    $("#textBox").html(newText);
+  });
+
+  </script>
+</head>
+<body>
+
+  <div id="textBox">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsa officiis rem cumque accusantium ab corporis eos ullam laudantium quae molestiae totam reiciendis, aperiam aliquam, corrupti doloribus optio nostrum debitis.
+  </div>
+
+</body>
+</html>

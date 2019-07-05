@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Tutorial</title>
+  <script src="js/jquery.js" charset="utf-8"></script>
+
+  <script>
+
+  $("document").ready(function(){
+
+    $("#textBox").on("click", whenMouseIsClicked);
+
+    $("#textBox").on("mouseleave", whenMouseLeaves);
+
+    function whenMouseIsClicked(){
+      $("#textBox").html("<h1>You Clicked Me</h1>");
+    }
+
+    function whenMouseLeaves(){
+      $("#textBox").html("<h1>Where You Gone</h1>");
+    }
+
+  });
+
+  </script>
+
+  <style>
+
+  #textBox{
+    width: 400px;
+    height: 200px;
+    background-color: teal;
+    border: 2px solid green;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div id="textBox">  </div>
+
+</body>
+</html>

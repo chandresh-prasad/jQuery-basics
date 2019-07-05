@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Tutorial</title>
+  <script src="js/jquery.js" charset="utf-8"></script>
+
+  <script>
+
+  $("document").ready(function(){
+
+    $(".textCopy").hover(highlightCopy);
+
+    function highlightCopy(){
+
+      $(this).toggleClass("highlight");
+    }
+
+  });
+
+  </script>
+
+  <style>
+
+  .highlight{
+    background-color: red;
+    color: white;
+  }
+
+  </style>
+</head>
+<body>
+
+  <div id="textBox">
+    <p class="textCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto optio accusamus aliquid officia ipsa at dolorem est ad eos fugiat quaerat, labore, cum numquam error deleniti soluta ratione obcaecati in!
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi vero natus maiores dicta incidunt nemo sequi cupiditate expedita, ab, nostrum cumque reprehenderit nam architecto ut, ea, consequatur commodi dolor asperiores.
+    </p>
+  </div>
+
+</body>
+</html>
